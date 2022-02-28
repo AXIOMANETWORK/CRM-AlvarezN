@@ -12,8 +12,10 @@
     }
 a{
     text-decoration: none;
+    color: black;
 }
 body{
+    background-color: rgb(231, 230, 230);
     font-family: 'Poppins', sans-serif;
 }
 .expand-main{
@@ -89,8 +91,7 @@ header nav ul li i{
     font-size: 1.2rem;
 }
 .ocultar-menu{
-    display: none
-    ;
+    display: none;
 }
 
 /*Comienza el aside*/
@@ -102,6 +103,7 @@ aside{
     grid-template-columns: 100%;
     grid-template-rows: 10% 10% 80%;
     justify-items: center;
+  
 }
 .logo{
     grid-column: span 1;
@@ -162,7 +164,7 @@ aside{
     padding-right: 1.2rem;
 }
 .item-close{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 0.8rem;
 }
 .close-menu{
@@ -173,7 +175,6 @@ aside{
 .content{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: rgb(231, 230, 230);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5%;
@@ -317,4 +318,69 @@ footer{
 }
 footer a{
     color: rgb(199, 194, 194);
+}
+
+
+
+  /*Login */
+.login{
+    display: flex;  
+    width: 100%;  
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    background-color: #fff;
+    width: 30%;
+    height: 500px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-info{
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.login-text{
+    text-align: center;
+}
+form{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form div:nth-child(3){
+    text-align: center;
+}
+label{
+    display: inline-block;
+}
+input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: 2px solid rgb(218, 217, 217);
+    border-radius: 0.2rem;
+}
+
+.btn-glb{
+    width: 80px;
+    height:40px;
+    background-color: rgb(65, 182, 250);
+    border-radius: 0.2rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-glb:hover{
+    background-color: rgb(65, 182, 250,0.7);
 }
